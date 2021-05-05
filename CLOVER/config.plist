@@ -515,6 +515,15 @@
 				<key>model</key>
 				<string>8 Series/C220 Series Chipset High Definition Audio Controller</string>
 			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x3)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,28,3/0,0</string>
+				<key>device_type</key>
+				<string>Unassigned class</string>
+				<key>model</key>
+				<string>RTL8411B PCI Express Card Reader</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
@@ -1087,6 +1096,20 @@
 				<key>Replace</key>
 				<data>g/k/Dw==</data>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enable TRIM for SSD</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>AEFQUExFIFNTRAA=</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
+				<key>Replace</key>
+				<data>AAAAAAAAAAAAAAA=</data>
+			</dict>
 		</array>
 		<key>PanicNoKextDump</key>
 		<true/>
@@ -1208,7 +1231,7 @@
 		<key>#BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>#BoardSerialNumber</key>
-		<string></string>
+		<string>C0225060SAMF651AX</string>
 		<key>#BoardType</key>
 		<integer>10</integer>
 		<key>#BoardVersion</key>
